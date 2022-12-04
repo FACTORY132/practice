@@ -15,6 +15,7 @@ html {
 body {
 
     background: linear-gradient(320deg, rgba(31, 26, 26, 0.95), rgba(83, 82, 82, 1));
+    background-size: cover;
     display: block;
     justify-content: center;
     transition: 0.9s;
@@ -55,6 +56,18 @@ body {
     text-align: center;
 }
 
+/*Left Position*/
+.miniL {
+    align-items: center;
+    border: 2px solid;
+    display: block;
+    padding: 10px;
+    width: 20%;
+    margin-left: 32px;
+    margin-top: -325px;
+    position: relative;
+}
+
 /**/
 
 /*Transform if mouse on words*/
@@ -62,11 +75,9 @@ div p {
     text-transform: uppercase;
     text-shadow: 20px;
     letter-spacing: 5px;
-    border: 1px black solid;
     border-width: 5px;
-    background-color: blue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(160, 209, 26);
+    color: rgb(60, 65, 46);
     font-style: oblique;
 }
 
@@ -122,7 +133,7 @@ ul li:active {
 
 /**/
 
-/*Selector*/
+/*Selector Text Color*/
 body.red #tab {
     color: red;
 }
@@ -137,18 +148,18 @@ body.purple #tab {
 
 /**/
 
-/*background*/
+/*Color Selector Background*/
 body.red #tab {
     background: linear-gradient(320deg, rgb(155, 38, 38), rgb(80, 7, 7));
 
 }
 
 body.green #tab {
-    background: linear-gradient(320deg, rgb(23, 170, 48), rgb(4, 59, 9));
+    background: linear-gradient(320deg, rgb(17, 122, 35), rgb(4, 59, 9));
 }
 
 body.purple #tab {
-    background: linear-gradient(320deg, rgb(136, 25, 130), rgb(66, 5, 57));
+    background: linear-gradient(354deg, rgb(109, 19, 104), rgb(66, 5, 57));
 }
 
 body.default #tab {

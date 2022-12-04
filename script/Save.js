@@ -1,9 +1,12 @@
-var tab = document.getElementById("tab").innerHTML = localStorage['main'] || "Writes";
-const log = console.log;
-    
+var text = "Writes";
+document.getElementById("tab").innerHTML = localStorage['main'] || text;
+
 setInterval(function () {
-        localStorage['main'] = document.getElementById("tab").innerHTML;
-}, 750)
+    localStorage['main'] = document.getElementById("tab").innerHTML;
+
+}, 750);
+
+
 
 
 

@@ -11,9 +11,10 @@ html {
 
 }
 
+/*Body*/
 body {
 
-    background: linear-gradient(320deg, rgb(31, 26, 26), rgb(83, 82, 82));
+    background: linear-gradient(320deg, rgba(31, 26, 26, 0.95), rgba(83, 82, 82, 1));
     display: block;
     justify-content: center;
     transition: 0.9s;
@@ -21,14 +22,13 @@ body {
 
 }
 
-#tab {
-    align-items: center;
-    transition: 0.5s;
 
-}
 
+/**/
+
+/*Header*/
 .box {
-
+    background: linear-gradient(320deg, rgba(3, 3, 3, 0.933), rgb(71, 70, 70));
     border: 2px solid;
     display: block;
     padding: 35px;
@@ -40,9 +40,11 @@ body {
 
 }
 
+/**/
 
-
+/*Color Selector Part*/
 .mini {
+
     align-items: center;
     border: 2px solid;
     display: block;
@@ -53,12 +55,16 @@ body {
     text-align: center;
 }
 
+/**/
 
-
+/*Transform if mouse on words*/
 div p {
     text-transform: uppercase;
     text-shadow: 20px;
     letter-spacing: 5px;
+    border: 1px black solid;
+    border-width: 5px;
+    background-color: blue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(160, 209, 26);
     font-style: oblique;
@@ -76,11 +82,21 @@ ul li:hover {
 
 ul li:active {
     transform: scale(0.9);
+
 }
 
+/*Border Transition*/
+#tab {
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+/**/
+
+/*Selector Font and Background*/
 #red {
     font-style: italic;
-    font-variant: initial;
     color: red;
     background-color: rgb(94, 12, 12);
 }
@@ -104,24 +120,41 @@ ul li:active {
     background-color: rgb(26, 26, 26);
 }
 
+/**/
 
-
+/*Selector*/
 body.red #tab {
     color: red;
-    font-style: italic;
 }
 
 body.green #tab {
     color: green;
-    font-style: italic;
 }
 
 body.purple #tab {
     color: purple;
-    font-style: italic;
+}
+
+/**/
+
+/*background*/
+body.red #tab {
+    background: linear-gradient(320deg, rgb(155, 38, 38), rgb(80, 7, 7));
+
+}
+
+body.green #tab {
+    background: linear-gradient(320deg, rgb(23, 170, 48), rgb(4, 59, 9));
+}
+
+body.purple #tab {
+    background: linear-gradient(320deg, rgb(136, 25, 130), rgb(66, 5, 57));
 }
 
 body.default #tab {
-    color: black;
-    font-style: italic;
+    background: linear-gradient(320deg, rgba(3, 3, 3, 0.933), rgb(71, 70, 70));
 }
+
+
+
+/**/

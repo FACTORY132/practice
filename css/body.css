@@ -11,7 +11,24 @@ html {
 
 }
 
+body {
+
+    background: linear-gradient(320deg, rgb(31, 26, 26), rgb(83, 82, 82));
+    display: block;
+    justify-content: center;
+    transition: 0.9s;
+    align-items: center;
+
+}
+
+#tab {
+    align-items: center;
+    transition: 0.5s;
+
+}
+
 .box {
+
     border: 2px solid;
     display: block;
     padding: 35px;
@@ -19,7 +36,11 @@ html {
     margin: auto;
     margin-top: -10px;
     font-size: xx-large;
+    font-style: italic;
+
 }
+
+
 
 .mini {
     align-items: center;
@@ -40,7 +61,7 @@ div p {
     letter-spacing: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(160, 209, 26);
-
+    font-style: oblique;
 }
 
 ul li {
@@ -59,10 +80,10 @@ ul li:active {
 
 #red {
     font-style: italic;
+    font-variant: initial;
     color: red;
     background-color: rgb(94, 12, 12);
 }
-
 
 
 #green {
@@ -75,4 +96,32 @@ ul li:active {
     font-style: italic;
     color: purple;
     background-color: rgb(92, 8, 92);
+}
+
+#default {
+    font-style: italic;
+    color: black;
+    background-color: rgb(26, 26, 26);
+}
+
+
+
+body.red #tab {
+    color: red;
+    font-style: italic;
+}
+
+body.green #tab {
+    color: green;
+    font-style: italic;
+}
+
+body.purple #tab {
+    color: purple;
+    font-style: italic;
+}
+
+body.default #tab {
+    color: black;
+    font-style: italic;
 }

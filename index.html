@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en_us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Editor</title>
+    <link href="css/body.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="box" id="tab" contenteditable="true">
+      <script src="script/Save.js"></script>
+    </div>
+
+    <div class="mini" id="selector">
+      <p id="redis">Choosing Color</p>
+      <ul>
+        <li class="colorize" id="default">Default</li>
+        <li class="colorize" id="red">Red</li>
+        <li class="colorize" id="green">Green</li>
+        <li class="colorize" id="purple">Purple</li>
+        <script src="script/Color.js"></script>
+      </ul>
+    </div>
+
+    <div>
+      <select id="font-style">
+        <option id="normal">Normal</option>
+        <option id="italic">Italic</option>
+        <option id="oblique">Oblique</option>
+      </select>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+
+}
+
+.box {
+    border: 2px solid;
+    display: block;
+    padding: 35px;
+    width: 80%;
+    margin: auto;
+    margin-top: -10px;
+    font-size: xx-large;
+}
+
+.mini {
+    align-items: center;
+    border: 2px solid;
+    display: block;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+
+div p {
+    text-transform: uppercase;
+    text-shadow: 20px;
+    letter-spacing: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(160, 209, 26);
+
+}
+
+ul li {
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.025);
+}
+
+ul li:active {
+    transform: scale(0.9);
+}
+
+#red {
+    font-style: italic;
+    color: red;
+    background-color: rgb(94, 12, 12);
+}
+
+
+
+#green {
+    font-style: italic;
+    color: green;
+    background-color: rgb(3, 75, 3);
+}
+
+#purple {
+    font-style: italic;
+    color: purple;
+    background-color: rgb(92, 8, 92);
+}

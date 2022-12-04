@@ -5,11 +5,11 @@ window.addEventListener('load', () => {
         element.addEventListener('click', function () {
             const id = this.id;
             document.body.className = id;
+
+
         })
     });
 })
-
-
 
 
 //css class name
@@ -23,3 +23,7 @@ function selectorAll(str) {
 
 //getElementTag id
 //document.getElementById("Tag id");
+
+
+
+

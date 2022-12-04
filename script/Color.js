@@ -1,11 +1,15 @@
- window.addEventListener('load', () => {
-        const fr = selectorAll(".colorize")
-        fr.array.forEach(element => {
-            element.addEventListener('click', () => function () {
-                alert("Str")
-            })
-        });
-    })
+
+window.addEventListener('load', () => {
+    const fr = selectorAll(".colorize")
+    fr.forEach(element => {
+        element.addEventListener('click', function () {
+            const id = this.id;
+            document.body.className = id;
+        })
+    });
+})
+
+
 
 
 //css class name
@@ -18,6 +22,4 @@ function selectorAll(str) {
 }
 
 //getElementTag id
-function ids(str) {
-    return document.getElementById(str);
-}
+//document.getElementById("Tag id");

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Editor</title>
     <link href="css/body.css" rel="stylesheet" />
+    <link href="css/tag.css" rel="stylesheet" />
+    <script src="script/Script.js"></script>
   </head>
 
   <body>
@@ -20,25 +22,42 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background: linear-gradient(300deg, rgb(133, 25, 25), rgb(179, 202, 47), rgb(15, 60, 119));
+        background: linear-gradient(
+          300deg,
+          rgb(133, 25, 25),
+          rgb(179, 202, 47),
+          rgb(15, 60, 119)
+        );
       "
     >
-      <p id="redis" style="background: linear-gradient(264deg, rgb(20, 65, 148), rgb(48, 182, 206), rgb(7, 59, 156));">Choosing Color</p>
+      <p
+        id="redis"
+        style="
+          background: linear-gradient(
+            264deg,
+            rgb(133, 25, 25),
+            rgb(179, 203, 47),
+            rgb(15, 59, 119)
+          );
+        "
+      >
+        Choosing Color
+      </p>
       <ul>
-        <li class="colorize" id="default">Default</li>
-        <li class="colorize" id="red">Red</li>
-        <li class="colorize" id="green">Green</li>
-        <li class="colorize" id="purple">Purple</li>
+        <li class="colorize" id="default" title="Default Color">Default</li>
+        <li class="colorize" id="red" title="Color Red">Red</li>
+        <li class="colorize" id="green" title="Color Green">Green</li>
+        <li class="colorize" id="purple" title="Color Purple">Purple</li>
         <script src="script/Color.js"></script>
       </ul>
     </div>
 
-    <div>
-      <select id="font-style">
-        <option id="normal">Normal</option>
-        <option id="italic">Italic</option>
-        <option id="oblique">Oblique</option>
-      </select>
+    <div class="left">
+      <input type="checkbox" id="light" onclick="Light_Gray()" />
+      <label for="light" style="margin-right: auto">Light</label>
+      <br />
+      <input type="checkbox" id="dark" onclick="Dark()" />
+      <label for="dark">Dark</label>
     </div>
   </body>
 </html>

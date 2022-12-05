@@ -2,3 +2,15 @@
     align-items: center;
     text-align: right;
 }
+
+.top-left {
+    align-items: center;
+    text-align: right;
+    font-size: x-large;
+    font-display: block;
+}
+
+div summary menu {
+    cursor: pointer;
+    width: 500px;
+}

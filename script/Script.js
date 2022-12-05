@@ -3,7 +3,7 @@ function Light_Gray() {
     var light = document.getElementById("light");
     var dark = document.getElementById("dark");
     if (light.checked == true) {
-        document.body.style.background = "red";
+        document.body.style.background = "linear-gradient(320deg,rgb(185, 179, 179), rgb(155, 170, 155), rgb(216, 216, 231))";
         dark.checked = false;
     }
     else {
@@ -16,7 +16,7 @@ function Dark() {
     var light = document.getElementById("light");
 
     if (dark.checked == true) {
-        document.body.style.background = "black"
+        document.body.style.background = "linear-gradient(320deg, rgb(71, 71, 71), rgb(12, 12, 12))"
         light.checked = false
     }
     else {

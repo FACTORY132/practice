@@ -9,7 +9,29 @@
     <script src="script/Script.js"></script>
   </head>
 
-  <body>
+  <body class=" ">
+    <div class="main box" id="selection">
+      <a class="main-left" onmouseover="mouseAbove()" onmouseout="mouseLeave()">
+        <input class="main-left" type="checkbox" id="light" name="back" />
+        <label for=" light">Light</label>
+        <br />
+        <input class="main-left" type="checkbox" id="dark" name="back" />
+        <label for=" dark">Dark</label>
+      </a>
+
+      <script>
+        function mouseAbove() {
+          var f = document.getElementById('selection')
+          f.style.top = '44px'
+        }
+
+        function mouseLeave() {
+          var f = document.getElementById('selection')
+          f.style.top = '-40px'
+        }
+      </script>
+    </div>
+
     <div class="box" id="tab" contenteditable="true">
       <script src="script/Save.js"></script>
     </div>
@@ -40,6 +62,7 @@
             rgb(15, 59, 119)
           );
         "
+        class="pr"
       >
         Choosing Color
       </p>
@@ -50,18 +73,6 @@
         <li class="colorize" id="purple" title="Color Purple">Purple</li>
         <script src="script/Color.js"></script>
       </ul>
-    </div>
-
-    <div class="left">
-      <input type="checkbox" id="light" onclick="Light_Gray()" />
-      <label for="light" style="margin-right: auto">Light</label>
-      <br />
-      <input type="checkbox" id="dark" onclick="Dark()" />
-      <label for="dark">Dark</label>
-    </div>
-
-    <div>
-      <button onclick="ran()">Random Test</button>
     </div>
   </body>
 </html>

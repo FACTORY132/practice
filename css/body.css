@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    width: 100%;
     height: 100%;
 }
 
@@ -26,6 +27,25 @@ body {
 
 
 /**/
+/*Selection Bar*/
+.main {
+    background-color: rgb(5, 5, 32);
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-left {
+    float: left !important;
+    height: auto;
+}
+
+.main-right {
+    text-align: right;
+    float: right !important;
+}
 
 /*Header*/
 .box {
@@ -33,13 +53,11 @@ body {
     border: 2px solid;
     display: block;
     padding: 35px;
-    width: 80%;
-    margin: auto;
-    margin-top: -10px;
+    width: auto;
     font-size: xx-large;
     font-style: italic;
-
 }
+
 
 /**/
 
@@ -71,7 +89,7 @@ body {
 /**/
 
 /*Transform if mouse on words*/
-div p {
+.pr {
     text-transform: uppercase;
     text-shadow: 20px;
     letter-spacing: 5px;
